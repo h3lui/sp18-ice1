@@ -6,8 +6,8 @@
 class CalcFramer {
 public:
 	void append(std::string chars);
-
 	// Does this buffer contain at least one complete message?
+
 	bool hasMessage() const;
 
 	// Copy the first instruction in this buffer into the provided class
@@ -21,6 +21,14 @@ public:
 
 protected:
 	// PUT ANY FIELDS/STATE HERE
+	int BUFSIZE = 1024;
+	int count = 0;
+	int countSizes = 0;
+	char * DELIMITER = '\r\n';
+	bool hasMessageBool = false;
+
+	char buf[BUFSIZE];
+	int sizes[100];
 };
 
 #endif // CALCFRAMER_HPP

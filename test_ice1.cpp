@@ -27,8 +27,38 @@ int main(int argc, char *argv[])
 
 	CalcFramer framer;
 	// put any test code here that uses your framer
-
-	cout << test_str << endl;
-
+  framer.append(test_str);
+  cout << "appended string" << endl;
+  framer.popMessage();
+  cout << "popped string" << endl;
+  framer.printToStream(cout);
+  framer.popMessage();
+  cout << "popped string" << endl;
+  framer.printToStream(cout);
+  framer.popMessage();
+  cout << "popped string" << endl;
+  framer.printToStream(cout);
+  framer.popMessage();
+  cout << "popped string" << endl;
+  framer.printToStream(cout);
+  framer.popMessage();
+  cout << "popped string" << endl;
+  framer.printToStream(cout);
+  framer.popMessage();
+  cout << "popped string" << endl;
+  framer.printToStream(cout);
+  framer.popMessage();
+  cout << "popped string" << endl;
+  framer.printToStream(cout);
+  framer.popMessage();
+  cout << "popped string" << endl;
+  framer.printToStream(cout);
+  framer.popMessage();
+  cout << "popped string" << endl;
+  framer.printToStream(cout);
+  framer.popMessage();
+  cout << "popped string" << endl;
+  framer.printToStream(cout);
+  cout << framer.hasMessage() << endl;
 	return 0;
 }

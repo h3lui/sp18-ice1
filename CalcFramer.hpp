@@ -26,11 +26,9 @@ public:
 
 protected:
 	// PUT ANY FIELDS/STATE HERE
-	int count = 0;
-	int countSizes = 0;
+	int char_count = 0;
+	int msg_count = 0;
 	//char DELIMITER = "\r\n";
-	bool msgDone = false;
-
 	char buf[BUFSIZE];
 	int msgSizes[100];
 };
